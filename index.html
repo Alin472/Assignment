@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Total Cost Calculator</title>
+    <body>
+    <div class="calculator">
+        <h2>Total Cost Calculator</h2>
+        <label for="price">Price per Item ($):</label>
+        <input type="number" id="price" placeholder="Enter price per item" required>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" placeholder="Enter quantity" required>
+
+        <label for="tax">Tax Rate (%):</label>
+        <input type="number" id="tax" placeholder="Enter tax rate" required>
+
+        <label for="shipping">Shipping Cost ($):</label>
+        <input type="number" id="shipping" placeholder="Enter shipping cost" required>
+
+        <button onclick="calculateTotal()">Calculate Total</button>
+
+        <div class="result" id="result">Total cost will be displayed here.</div>
+    </div>
